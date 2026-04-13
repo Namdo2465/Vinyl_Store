@@ -1,0 +1,24 @@
+{
+  "name": "spiral-sounds",
+  "version": "1.0.0",
+  "description": "Online class vinyl store",
+  "homepage": "https://github.com/Namdo2465/Vinyl_Store#readme",
+  "bugs": {
+    "url": "https://github.com/Namdo2465/Vinyl_Store/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Namdo2465/Vinyl_Store.git"
+  },
+  "license": "ISC",
+  "author": "Nam Do",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
