@@ -1,5 +1,7 @@
 # Spiral Sounds - Online Vinyl Store
 
+![Spiral Sounds Preview](./public/images/preview.png)
+
 A modern web application for browsing and purchasing vinyl records. Built with Node.js, Express, and SQLite.
 
 ## Features
@@ -45,12 +47,14 @@ A modern web application for browsing and purchasing vinyl records. Built with N
 ## Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/Namdo2465/Vinyl_Store.git
    cd Vinyl_Store
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
@@ -64,12 +68,15 @@ A modern web application for browsing and purchasing vinyl records. Built with N
 ## Usage
 
 ### Development Mode (with auto-reload)
+
 ```bash
 npm run dev
 ```
+
 The server will start on `http://localhost:8000`
 
 ### Production Mode
+
 ```bash
 npm start
 ```
@@ -79,16 +86,20 @@ The server will start on `http://localhost:8000`
 ## API Endpoints
 
 ### Get All Products
+
 ```
 GET /api/products
 ```
+
 Returns all products or filtered results based on query parameters.
 
 **Query Parameters:**
+
 - `search` - Search by title, artist, or genre (case-insensitive)
 - `genre` - Filter by exact genre match
 
 **Examples:**
+
 ```
 GET /api/products?search=rock
 GET /api/products?genre=indie
@@ -96,14 +107,17 @@ GET /api/products?search=silver&genre=indie
 ```
 
 ### Get All Genres
+
 ```
 GET /api/products/genres
 ```
+
 Returns an array of all available music genres in the database.
 
 ## Database Schema
 
 ### Products Table
+
 ```sql
 CREATE TABLE products (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -119,12 +133,12 @@ CREATE TABLE products (
 
 ## Available Scripts
 
-| Script | Description |
-|--------|-------------|
-| `npm start` | Start production server |
-| `npm run dev` | Start development server with auto-reload |
-| `node createTable.js` | Create the products database table |
-| `node seedTable.js` | Populate database with seed data |
+| Script                | Description                               |
+| --------------------- | ----------------------------------------- |
+| `npm start`           | Start production server                   |
+| `npm run dev`         | Start development server with auto-reload |
+| `node createTable.js` | Create the products database table        |
+| `node seedTable.js`   | Populate database with seed data          |
 
 ## Dependencies
 
