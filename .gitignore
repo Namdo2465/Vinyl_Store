@@ -1,2 +1,6 @@
 node_modules/
 .DS_Store
+getData.js
+logTable.js
+createTable.js
+seedTable.js
