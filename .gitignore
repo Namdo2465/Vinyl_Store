@@ -4,3 +4,5 @@ getData.js
 logTable.js
 createTable.js
 seedTable.js
+createUserTable.js
+logUserTable.js
