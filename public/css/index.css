@@ -311,3 +311,118 @@ button:active {
     padding: var(--space-md);
   }
 }
+
+/* -----------------------------------
+   Sign in/up forms
+----------------------------------- */
+
+.sign-forms {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.form-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-inner input {
+  padding: 0.7em;
+}
+
+.form-inner label {
+  margin-bottom: -5px;
+}
+
+.sign-link {
+  color: var(--color-accent);
+  border: none;
+  cursor: pointer;
+}
+
+.form-btn {
+  margin-top: 0.5em;
+  background-color: var(--color-accent);
+  color: white;
+  padding: 0.8em 1.5em;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1.1rem;
+}
+
+.form-btn:hover,
+.main-btn:hover {
+  background-color: dodgerblue;
+}
+
+.form-btn:active,
+.main-btn:active {
+  background-color: yellow;
+  color: black;
+}
+
+/* -----------------------------------
+ Cart
+----------------------------------- */
+
+.cart-main {
+  margin: 0 auto;
+  padding: 1.5em;
+  max-width: 600px;
+}
+
+.cart-main ul {
+  list-style: none;
+  width: 100%;
+  padding: 0.5em 0;
+}
+
+.cart-main ul li {
+  margin-bottom: 0.5em;
+  padding-bottom: 0.25em;
+  border-bottom: 1px solid var(--color-accent);
+}
+
+.cart-main ul li div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-main ul li span {
+  font-size: 14px;
+}
+
+.cart-main ul li button {
+  background-color: transparent;
+  margin-left: auto;
+  border: 0;
+  cursor: pointer;
+}
+
+.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.cart-banner-link {
+  display: flex;
+  align-items: center;
+}
+
+.cart-banner-link a {
+  color: var(--color-accent);
+}
+
+.cart-banner-link a:hover {
+  text-decoration: none;
+}
+
+.cart-banner-link img {
+  max-width: 1em;
+  margin-right: 0.3em;
+}
