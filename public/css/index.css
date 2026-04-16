@@ -135,7 +135,15 @@ footer {
   gap: 1em;
   padding: var(--space-sm) var(--space-md);
   background-color: var(--color-bg-lightest);
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.top-banner-greeting {
+  font-size: 0.8em;
+  margin: 0;
+  margin-right: auto;
 }
 
 .top-banner input {

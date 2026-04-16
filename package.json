@@ -21,7 +21,10 @@
   },
   "dependencies": {
     "bcryptjs": "^3.0.3",
+    "dotenv": "^17.4.2",
     "express": "^5.2.1",
+    "express-session": "^1.19.0",
+    "session": "^0.1.0",
     "sqlite": "^5.1.1",
     "sqlite3": "^6.0.1",
     "validator": "^13.15.35"

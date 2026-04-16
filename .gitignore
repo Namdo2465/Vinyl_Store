@@ -6,3 +6,4 @@ createTable.js
 seedTable.js
 createUserTable.js
 logUserTable.js
+.env
