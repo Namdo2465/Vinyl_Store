@@ -42,10 +42,6 @@ export async function getCartCount(req, res) {
 }
 
 export async function getAll(req, res) {
-  if (!req.session.userId) {
-    return res.json({ err: "not logged in" });
-  }
-
   const db = await getDBConnection();
 
   const items = await db.all(
@@ -76,6 +72,16 @@ export async function deleteItem(req, res) {
 
   await db.run("DELETE FROM cart_items WHERE id = ? AND user_id = ?", [
     itemId,
+    req.session.userId,
+  ]);
+
+  res.status(204).send();
+}
+
+export async function deleteAll(req, res) {
+  const db = await getDBConnection();
+
+  await db.run("DELETE FROM cart_items WHERE user_id = ?", [
     req.session.userId,
   ]);
 
