@@ -6,4 +6,6 @@ createTable.js
 seedTable.js
 createUserTable.js
 logUserTable.js
+createCartTable.js
+logCartTable.js
 .env
